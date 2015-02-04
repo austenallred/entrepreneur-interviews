@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		F92D2A341A8212E800D7C598 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92D2A331A8212E800D7C598 /* AppDelegate.swift */; };
-		F92D2A361A8212E800D7C598 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92D2A351A8212E800D7C598 /* ViewController.swift */; };
 		F92D2A391A8212E800D7C598 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F92D2A371A8212E800D7C598 /* Main.storyboard */; };
 		F92D2A3B1A8212E800D7C598 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F92D2A3A1A8212E800D7C598 /* Images.xcassets */; };
 		F92D2A3E1A8212E800D7C598 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F92D2A3C1A8212E800D7C598 /* LaunchScreen.xib */; };
 		F92D2A4A1A8212E800D7C598 /* Entrepreneur_InterviewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92D2A491A8212E800D7C598 /* Entrepreneur_InterviewsTests.swift */; };
+		F92D2A541A82130B00D7C598 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92D2A531A82130B00D7C598 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +29,13 @@
 		F92D2A2E1A8212E800D7C598 /* Entrepreneur Interviews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Entrepreneur Interviews.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F92D2A321A8212E800D7C598 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F92D2A331A8212E800D7C598 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F92D2A351A8212E800D7C598 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F92D2A381A8212E800D7C598 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F92D2A3A1A8212E800D7C598 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F92D2A3D1A8212E800D7C598 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F92D2A431A8212E800D7C598 /* Entrepreneur InterviewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Entrepreneur InterviewsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F92D2A481A8212E800D7C598 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F92D2A491A8212E800D7C598 /* Entrepreneur_InterviewsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entrepreneur_InterviewsTests.swift; sourceTree = "<group>"; };
+		F92D2A531A82130B00D7C598 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +78,8 @@
 			isa = PBXGroup;
 			children = (
 				F92D2A331A8212E800D7C598 /* AppDelegate.swift */,
-				F92D2A351A8212E800D7C598 /* ViewController.swift */,
 				F92D2A371A8212E800D7C598 /* Main.storyboard */,
+				F92D2A531A82130B00D7C598 /* TableViewController.swift */,
 				F92D2A3A1A8212E800D7C598 /* Images.xcassets */,
 				F92D2A3C1A8212E800D7C598 /* LaunchScreen.xib */,
 				F92D2A311A8212E800D7C598 /* Supporting Files */,
@@ -212,8 +212,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F92D2A361A8212E800D7C598 /* ViewController.swift in Sources */,
 				F92D2A341A8212E800D7C598 /* AppDelegate.swift in Sources */,
+				F92D2A541A82130B00D7C598 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
