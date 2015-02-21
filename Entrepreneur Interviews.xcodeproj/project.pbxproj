@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F913B7201A98D9C2003388C0 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F913B71F1A98D9C2003388C0 /* DetailViewController.swift */; };
 		F92D2A341A8212E800D7C598 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92D2A331A8212E800D7C598 /* AppDelegate.swift */; };
 		F92D2A391A8212E800D7C598 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F92D2A371A8212E800D7C598 /* Main.storyboard */; };
 		F92D2A3B1A8212E800D7C598 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F92D2A3A1A8212E800D7C598 /* Images.xcassets */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F913B71F1A98D9C2003388C0 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		F92D2A2E1A8212E800D7C598 /* Entrepreneur Interviews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Entrepreneur Interviews.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F92D2A321A8212E800D7C598 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F92D2A331A8212E800D7C598 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				F92D2A331A8212E800D7C598 /* AppDelegate.swift */,
 				F92D2A371A8212E800D7C598 /* Main.storyboard */,
 				F92D2A531A82130B00D7C598 /* TableViewController.swift */,
+				F913B71F1A98D9C2003388C0 /* DetailViewController.swift */,
 				F92D2A3A1A8212E800D7C598 /* Images.xcassets */,
 				F92D2A3C1A8212E800D7C598 /* LaunchScreen.xib */,
 				F92D2A311A8212E800D7C598 /* Supporting Files */,
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F913B7201A98D9C2003388C0 /* DetailViewController.swift in Sources */,
 				F92D2A341A8212E800D7C598 /* AppDelegate.swift in Sources */,
 				F92D2A541A82130B00D7C598 /* TableViewController.swift in Sources */,
 			);
@@ -405,6 +409,7 @@
 				F92D2A4F1A8212E800D7C598 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F92D2A501A8212E800D7C598 /* Build configuration list for PBXNativeTarget "Entrepreneur InterviewsTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +418,7 @@
 				F92D2A521A8212E800D7C598 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

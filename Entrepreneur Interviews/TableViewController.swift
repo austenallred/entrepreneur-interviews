@@ -8,13 +8,18 @@
 
 import UIKit
 
-class TableViewController: UITableViewController {
-    var entrepreneurs = ["Chris Sacca","Jack Dorsey","Mark Zuckerberg","Marc Andreessen","Ben Horowitz","Chris Dixon","Steve Jobs","Bill Gates","Elon Musk"]
+class TableViewController: UITableViewController, UITableViewDataSource, UITableViewDelegate {
+
+    let entrepreneurs = ["Chris Sacca","Jack Dorsey","Mark Zuckerberg","Marc Andreessen","Ben Horowitz","Chris Dixon","Steve Jobs","Bill Gates","Elon Musk"]
+    
+    var entrepreneur = "Chris Sacca"
     
     override func viewDidLoad() {
+        tableView.dataSource = self
+        tableView.delegate = self
+        self.title = "Select an entrepreneur"
     }
-
-
+    
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return entrepreneurs.count
     }
@@ -24,5 +29,19 @@ class TableViewController: UITableViewController {
         let label = cell.viewWithTag(1000) as UILabel
         label.text = entrepreneurs[indexPath.row]
         return cell
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        println("Pushed")
+        self.entrepreneur = self.entrepreneurs[indexPath.row]
+        self.performSegueWithIdentifier("tableViewToDetailSegue", sender: self)
+        println(entrepreneur)
+    }
+    
+ 
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        var secondViewController = segue.destinationViewController as DetailViewController
+        secondViewController.entrepreneurName = entrepreneur
     }
 }

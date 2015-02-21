@@ -1,9 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Qdq-An-M5M">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fPh-7D-KkQ">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="vem-fi-sup">
+            <objects>
+                <navigationController id="fPh-7D-KkQ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="39m-yZ-UEZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Qdq-An-M5M" kind="relationship" relationship="rootViewController" id="waa-YM-e1U"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jxy-uV-l7D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-408" y="420"/>
+        </scene>
         <!--Table View Controller-->
         <scene sceneID="eD4-t9-s0w">
             <objects>
@@ -26,9 +42,6 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="MFW-cw-xan" kind="show" id="UhY-RL-tdj"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -36,15 +49,20 @@
                             <outlet property="delegate" destination="Qdq-An-M5M" id="dNu-Xw-AZg"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="BKt-2P-nYW"/>
+                    <connections>
+                        <outlet property="tableView" destination="0xZ-o9-BWq" id="3xM-Ho-xMB"/>
+                        <segue destination="MFW-cw-xan" kind="show" identifier="tableViewToDetailSegue" id="7O6-Ux-Kan"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TLg-kW-Y01" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="293" y="420"/>
+            <point key="canvasLocation" x="335" y="420"/>
         </scene>
-        <!--View Controller-->
+        <!--entrepreneur-->
         <scene sceneID="pBP-d5-GXX">
             <objects>
-                <viewController id="MFW-cw-xan" sceneMemberID="viewController">
+                <viewController title="entrepreneur" id="MFW-cw-xan" customClass="DetailViewController" customModule="Entrepreneur_Interviews" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1H5-vn-JMM"/>
                         <viewControllerLayoutGuide type="bottom" id="ppu-sg-Nj8"/>
@@ -53,8 +71,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Heyo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ped-NC-0km">
-                                <rect key="frame" x="280" y="20" width="40" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Whaddup" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="54N-Pw-3Pm">
+                                <rect key="frame" x="263" y="72" width="75" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -62,9 +80,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="ped-NC-0km" secondAttribute="centerX" id="MRZ-Oi-a68"/>
+                            <constraint firstItem="54N-Pw-3Pm" firstAttribute="top" secondItem="1H5-vn-JMM" secondAttribute="bottom" constant="8" id="Kx4-Ov-Y39"/>
+                            <constraint firstAttribute="centerX" secondItem="54N-Pw-3Pm" secondAttribute="centerX" id="hr4-uD-HZ7"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nameLabel" destination="54N-Pw-3Pm" id="Iii-ls-B6y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="im0-wH-5Vf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
